@@ -9,27 +9,44 @@ const WelcomeScreen = () => {
   return (
     <div>
       <header className="header">
-        <div className="header-menu-trigger">
-          <FaBars size="22" />
-          <span>Menu</span>
-        </div>
-        <div className="header-logo">
-          <div className="header-logo-wrapper">
-            <Logo />
+        <div class="header-inner">
+          <div className="header-menu-trigger">
+            <FaBars size="25" />
+            <span>Menu</span>
           </div>
-          <span>Newspaper</span>
-        </div>
-        <div className="header-links">
-          <div className="header-favorite header-link-item">
-            <IoMdStarOutline size="24" />
-            <span>Favorite</span>
+          <div className="header-logo">
+            <div className="header-logo-wrapper">
+              <Logo />
+            </div>
+            <span>Newspaper</span>
           </div>
-          <div className="header-search header-link-item">
-            <IoSearchOutline size="20" />
-            <span>Search</span>
+          <div className="header-links">
+            <div className="header-favorite header-link-item">
+              <IoMdStarOutline size="24" />
+              <span>Favorite</span>
+            </div>
+            <div className="header-search header-link-item">
+              <IoSearchOutline size="20" />
+              <span>Search</span>
+            </div>
           </div>
         </div>
       </header>
+
+      <div className="category">
+        <div className="horizontal-category wrapper">
+          <Link href="#" className="active">
+            Politika
+          </Link>
+          <Link href="#">Politika</Link>
+          <Link href="#">Politika</Link>
+          <Link href="#">Politika</Link>
+          <Link href="#">Politika</Link>
+          <Link href="#">Politika</Link>
+          <Link href="#">Politika</Link>
+          <Link href="#">Politika</Link>
+        </div>
+      </div>
     </div>
   );
 };
