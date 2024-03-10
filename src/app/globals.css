@@ -1,17 +1,43 @@
 :root {
   --primary-color: rgba(188, 73, 73, 0.982);
+  --background: #0f2335;
+  --black: #111;
+  --gray: #4a4a4a;
+  --wrapper-size: 67%;
+  --wrapper-inner-size: 62%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* icons */
+.icon-with-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* @media (prefers-color-scheme: dark) {
+
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
 } */
+body {
+  /* background-color: var(--background); */
+  margin: 0;
+}
 .wrapper {
   margin: 0 auto;
-  width: 80%;
+  width: var(--wrapper-size);
   display: flex;
 }
 .header {
@@ -19,10 +45,21 @@
   color: white;
 
   padding: 0.5rem 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+.container {
+  position: relative;
+  z-index: 888;
+  width: var(--wrapper-inner-size);
+}
+.spacer {
+  height: 57px;
 }
 .header-inner {
   margin: 0 auto;
-  width: 80%;
+  width: var(--wrapper-size);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +101,7 @@
 /* Category */
 .category {
   box-shadow: 0px 5px 9px -4px #b4b4b4;
-  height: 3rem;
+  height: 2.8rem;
 }
 
 .horizontal-category {
@@ -76,12 +113,71 @@
 .horizontal-category a {
   padding-bottom: 0.5rem;
   border-bottom: 0.3rem solid transparent;
-  color: #4a4a4a;
+  color: var(--gray);
 
   transition: 0.6s all;
 }
 .horizontal-category a:hover,
 .horizontal-category a.active {
-  border-bottom: 0.3rem solid red;
-  color: #111;
+  border-bottom: 0.3rem solid var(--primary-color);
+  color: var(--black);
+}
+
+.main-slider {
+  width: 100%;
+  background-color: red;
+  height: 28rem;
+  margin-top: 0.2rem;
+
+  overflow: hidden;
+}
+.slide {
+  height: 28rem;
+}
+.slide-image {
+  height: 100%;
+}
+.slide-image::after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.486);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-informations {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.slide-informations h1 {
+  font-weight: 500;
+}
+
+.news-author-infos {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+.author-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.author-image {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  overflow: hidden;
 }
