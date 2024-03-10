@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgba(188, 73, 73, 0.982);
+  --primary-color: rgba(223, 0, 0, 0.982);
   --background: #0f2335;
   --black: #111;
   --gray: #4a4a4a;
@@ -34,6 +34,7 @@ a {
 body {
   /* background-color: var(--background); */
   margin: 0;
+  background-color: var(--background);
 }
 .wrapper {
   margin: 0 auto;
@@ -53,6 +54,7 @@ body {
   position: relative;
   z-index: 888;
   width: var(--wrapper-inner-size);
+  margin-top: 0.2rem;
 }
 .spacer {
   height: 57px;
@@ -102,6 +104,7 @@ body {
 .category {
   box-shadow: 0px 5px 9px -4px #b4b4b4;
   height: 2.8rem;
+  
 }
 
 .horizontal-category {
@@ -113,21 +116,20 @@ body {
 .horizontal-category a {
   padding-bottom: 0.5rem;
   border-bottom: 0.3rem solid transparent;
-  color: var(--gray);
+  color: rgb(202, 197, 197);
 
   transition: 0.6s all;
 }
 .horizontal-category a:hover,
 .horizontal-category a.active {
   border-bottom: 0.3rem solid var(--primary-color);
-  color: var(--black);
+  color: white;
 }
 
 .main-slider {
   width: 100%;
   background-color: red;
   height: 28rem;
-  margin-top: 0.2rem;
 
   overflow: hidden;
 }
