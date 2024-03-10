@@ -9,7 +9,7 @@ import { IoPlayCircleOutline, IoSearchOutline } from "react-icons/io5";
 const WelcomeScreen = () => {
   return (
     <div>
-      <header className="heasder">
+      <header className="header">
         <div class="header-inner">
           <div className="header-menu-trigger">
             <FaBars size="25" />
