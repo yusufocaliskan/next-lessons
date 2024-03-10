@@ -1,4 +1,3 @@
-import { IoPlayCircleOutline, IoSearchOutline } from "react-icons/io5";
 import Header from "@/components/Header";
 import Slider from "@/components/Slider";
 
