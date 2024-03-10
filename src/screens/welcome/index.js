@@ -4,10 +4,12 @@ import { FaBars } from "react-icons/fa6";
 import { IoMdStarOutline } from "react-icons/io";
 import { IoPlayCircleOutline, IoSearchOutline } from "react-icons/io5";
 
+
+
 const WelcomeScreen = () => {
   return (
     <div>
-      <header className="header">
+      <header className="heasder">
         <div class="header-inner">
           <div className="header-menu-trigger">
             <FaBars size="25" />
