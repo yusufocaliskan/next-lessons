@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Slider from "@/components/Slider";
 import PostCard from "@/components/PostCard"
 import Headline from "@/components/Headline"
+import LiveBlog from "@/components/LiveBlog";
 
 
 
@@ -21,6 +22,9 @@ const WelcomeScreen = () => {
       </div>
       <div>
         <Headline />
+      </div>
+      <div> 
+        <LiveBlog />
       </div>
     </div>
   );
