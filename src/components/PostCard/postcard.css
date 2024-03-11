@@ -1,0 +1,56 @@
+.featuredposts {
+    justify-content: center;
+    gap: 1rem;
+  }
+.card-container {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    background-color: #1d2f3f;
+    height: 310px;
+}
+
+
+.card-img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    
+
+}
+
+
+.card-title {
+    margin: 0.9rem 7%;
+    color: white;
+
+}
+
+.card-desc {
+    margin: 0.9rem 7%;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+ .card-btn {
+    text-align: center;
+    width: 50%;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    display: flex;
+
+ }
+
+ .card-title {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+
+ }
+
+ 
